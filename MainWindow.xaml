@@ -18,9 +18,6 @@
     </Window.Resources>
 
     <Grid Background="Black" Margin="0,0,0,0">
-        <Grid.ColumnDefinitions>
-            <ColumnDefinition/>
-        </Grid.ColumnDefinitions>
         <Image x:Name="MuYu" HorizontalAlignment="Left" Height="275" Margin="299,157,0,0" VerticalAlignment="Top" Width="387" Source="/muyu.png" MouseDown="MuYu_MouseDown" Style="{StaticResource ResourceKey=duStyle}"/>
         <Label HorizontalAlignment="Left" Margin="313,350,0,0" VerticalAlignment="Top" Height="10" Width="10"/>
         <Label Content="当前功德：" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="35,25,0,0" Width="165" FontSize="24" Height="40"/>
