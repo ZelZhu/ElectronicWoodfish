@@ -38,7 +38,7 @@ namespace ElectronicWoodfish
         {
 
             ShowAnimation();
-            ShowGDJY();
+            ShowGDJYAnimation();
         }
 
         /// <summary>
@@ -59,7 +59,7 @@ namespace ElectronicWoodfish
         }
 
         /// <summary>
-        /// 缩放恢复
+        /// 木鱼敲击动画
         /// </summary>
         private void ShowAnimation()
         {
@@ -90,7 +90,11 @@ namespace ElectronicWoodfish
 
 
         }
-        private void ShowGDJY()
+
+        /// <summary>
+        /// 功德加一动画
+        /// </summary>
+        private void ShowGDJYAnimation()
         {
 
             var sb = new Storyboard();
@@ -119,7 +123,6 @@ namespace ElectronicWoodfish
             sb.Begin();
 
         }
-
     }
 
 }
