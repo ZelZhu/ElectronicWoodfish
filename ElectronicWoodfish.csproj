@@ -26,4 +26,10 @@
     <Resource Include="stick.png" />
   </ItemGroup>
 
+  <ItemGroup>
+    <None Update="mp3\du.mp3">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+
 </Project>

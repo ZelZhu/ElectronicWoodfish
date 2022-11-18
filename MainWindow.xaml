@@ -5,22 +5,20 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:ElectronicWoodfish"
         mc:Ignorable="d"
-        Title="电子木鱼 wpf版 Powerd By Zel." Height="550" Width="900">
-
-    <Window.Resources>
-        <Style x:Key="duStyle" TargetType="Image">
-            <Style.Triggers>
-                <EventTrigger RoutedEvent="PreviewMouseDown">
-                    <SoundPlayerAction Source="/mp3/du.mp3" />
-                </EventTrigger>
-            </Style.Triggers>
-        </Style>
-    </Window.Resources>
+        Title="电子木鱼 wpf版 Powerd By Zel." Height="650" Width="1000">
 
     <Grid Background="Black" Margin="0,0,0,0">
-        <Image x:Name="MuYu" HorizontalAlignment="Left" Height="275" Margin="299,157,0,0" VerticalAlignment="Top" Width="387" Source="/muyu.png" MouseDown="MuYu_MouseDown" Style="{StaticResource ResourceKey=duStyle}"/>
+
+        <Image x:Name="MuYu" Height="350" Margin="244,150,244,0" VerticalAlignment="Top" Width="511" Source="/muyu.png"/>
         <Label HorizontalAlignment="Left" Margin="313,350,0,0" VerticalAlignment="Top" Height="10" Width="10"/>
         <Label Content="当前功德：" HorizontalAlignment="Left" VerticalAlignment="Top" Foreground="White" Margin="35,25,0,0" Width="165" FontSize="24" Height="40"/>
         <Label x:Name="Gd_Number" Content="0" HorizontalAlignment="Left" FontSize="24" Margin="158,26,0,0" VerticalAlignment="Top" Foreground="DarkOrange" RenderTransformOrigin="0.613,0.241" Height="40" Width="732"/>
+        <Button Content="" HorizontalAlignment="Left" Margin="310,171,0,0" VerticalAlignment="Top" Height="259" Width="343" Click="Button_Click" Opacity="0">
+            <Button.Background>
+                <SolidColorBrush Opacity="0"/>
+            </Button.Background>
+        </Button>
+        <Label x:Name="LBL_GDJY" Content="功德+1" HorizontalAlignment="Left" Margin="690,142,0,0" VerticalAlignment="Top" Background="{x:Null}" FontSize="35" Width="130" Foreground="White" IsEnabled="False" Opacity="0" />
+
     </Grid>
 </Window>
